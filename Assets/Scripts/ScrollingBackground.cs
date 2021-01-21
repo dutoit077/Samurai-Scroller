@@ -25,10 +25,17 @@ public class ScrollingBackground : MonoBehaviour
     }
     private void Update()
     {
+        /*
         if (cameraTransfrom.position.x < (layers[leftIndex].transform.position.x + viewZone))
             ScrollLeft();
         if (cameraTransfrom.position.x < (layers[leftIndex].transform.position.x + viewZone))
             ScrollRight();
+        */
+        if (Input.GetKeyDown(KeyCode.A))
+            ScrollLeft();
+        else if(Input.GetKeyDown(KeyCode.A))
+            ScrollRight();
+
     }
 
     private void ScrollLeft()
